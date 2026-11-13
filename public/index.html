@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MD Saiful Islam Tamim – Shopify Developer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🛍️%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Shopify &amp; Shopify Plus developer. Liquid, Online Store 2.0, A/B testing, GA4 tracking. Available for remote work with US and UK teams.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+:root{--bg:#f6f7f4;--sf:#fff;--tx:#0e1a15;--mu:#5b6a62;--bd:#dfe5df;--ac:#0b8a63;--ac2:#d9f3e8;--gl:rgba(11,138,99,.16);--on:#fff;--hd:"Space Grotesk",system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#080d0b;--sf:#111a16;--tx:#eef5f1;--mu:#93a49b;--bd:#22302a;--ac:#3ee0a5;--ac2:#10291f;--gl:rgba(62,224,165,.14);--on:#04110b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#080d0b;--sf:#111a16;--tx:#eef5f1;--mu:#93a49b;--bd:#22302a;--ac:#3ee0a5;--ac2:#10291f;--gl:rgba(62,224,165,.14);--on:#04110b;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+a{color:inherit}h1,h2,h3{font-family:var(--hd);line-height:1.1;margin:0 0 .5em;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,6vw,2.8rem)}
+.w{width:100%;max-width:1100px;margin:0 auto;padding:0 20px;position:relative}
+section{padding:28px 0}
+.mu{color:var(--mu)}.ey{font:600 .8rem var(--hd);letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-bottom:10px;display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:14px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font:600 15px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--gl)}
+.btn.p{background:var(--ac);color:var(--on);border-color:var(--ac)}.btn[disabled]{opacity:.5;pointer-events:none}
+.sm{min-height:38px;padding:0 14px;font-size:13px;border-radius:10px}
+#glow{position:fixed;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,var(--gl),transparent 70%);pointer-events:none;z-index:0;left:-210px;top:-210px}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;background:var(--ac2);z-index:-1}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:10px}
+nav b{font:700 1.05rem var(--hd)}nav b i{color:var(--ac);font-style:normal}
+nav .l{display:none;gap:20px;font-size:.92rem}nav .l a{text-decoration:none;color:var(--mu)}nav .l a:hover{color:var(--ac)}
+.ib{width:42px;height:42px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:18px;cursor:pointer}
+#prog{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:0 0;z-index:30}
+.dock{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:25;display:flex;gap:2px;padding:6px;border-radius:99px;background:color-mix(in srgb,var(--sf) 88%,transparent);backdrop-filter:blur(14px);border:1px solid var(--bd);box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.dock a{padding:9px 12px;border-radius:99px;text-decoration:none;font-size:.8rem;font-weight:600;color:var(--mu)}.dock a:active{background:var(--ac2);color:var(--ac)}
+.hero{display:grid;gap:30px;padding-top:56px;align-items:center;position:relative}
+.pw{position:relative;width:240px;height:240px;margin:0 auto}
+.pw::before{content:"";position:absolute;inset:-10px;border-radius:38px;border:2px dashed var(--ac);opacity:.5;animation:sp 22s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.pic{position:relative;width:100%;height:100%;border-radius:32px;background:linear-gradient(135deg,var(--ac),#79e3bd);display:grid;place-items:center;font:700 84px var(--hd);color:var(--on);object-fit:cover}
+.bd{position:absolute;left:50%;transform:translateX(-50%);bottom:-14px;white-space:nowrap;background:var(--sf);border:1px solid var(--bd);border-radius:99px;padding:6px 12px;font-size:.78rem;font-weight:600;display:flex;gap:6px;align-items:center;box-shadow:0 8px 20px var(--gl)}
+.bd::before{content:"";width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}
+.hero h1{font-size:clamp(2.4rem,11vw,4.6rem)}
+.ln{display:block;overflow:hidden;padding-bottom:.08em}.ln span{display:inline-block}
+.grad{background:linear-gradient(90deg,var(--ac),#6ee7b7,var(--ac));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gs 6s linear infinite}
+@keyframes gs{to{background-position:200% 0}}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;align-items:center}
+.so{width:46px;height:46px;border-radius:14px;border:1px solid var(--bd);background:var(--sf);display:inline-grid;place-items:center;color:var(--tx);transition:.2s}.so:hover{color:var(--ac);border-color:var(--ac);transform:translateY(-2px)}.so.off{display:none}html.own .so.off{display:inline-grid;opacity:.4;border-style:dashed}html.own .so.off:hover{transform:none;color:var(--tx);border-color:var(--bd)}
+.meta{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;font-size:.88rem;color:var(--mu)}.meta span{display:flex;gap:6px;align-items:center}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:60px;margin-bottom:36px}
+.st{background:var(--sf);border:1px solid var(--bd);border-radius:18px;padding:18px}
+.st b{display:block;font:700 2.4rem/1 var(--hd);color:var(--ac);margin-bottom:6px}.st>span{font-size:.85rem;color:var(--mu)}
+.mq{overflow:hidden;border-block:1px solid var(--bd);padding:14px 0;background:var(--sf)}
+.mt{display:flex;gap:12px;width:max-content;animation:mq 45s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+.chip{padding:7px 14px;border-radius:99px;background:var(--bg);border:1px solid var(--bd);font-size:.86rem;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.grid{display:grid;gap:16px}
+.sc{background:var(--sf);border:1px solid var(--bd);border-radius:18px;padding:16px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:12px}.sh b{flex:1;font-size:.98rem}.sh em{font:700 .95rem var(--hd);font-style:normal;color:var(--c)}
+.si{flex:none;overflow:hidden;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:var(--c);background:color-mix(in srgb,var(--c) 15%,transparent)}
+.tr{height:8px;border-radius:99px;background:var(--bd);overflow:hidden}.fl{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--c),color-mix(in srgb,var(--c) 55%,#fff))}
+.sv{background:var(--sf);border:1px solid var(--bd);border-radius:20px;padding:22px;transition:.3s}.sv:hover{border-color:var(--ac);transform:translateY(-4px)}
+.sv .si{width:48px;height:48px;margin-bottom:14px;--c:var(--ac)}.sv h3{font-size:1.1rem}.sv p{margin:0;color:var(--mu);font-size:.93rem}
+.tabs{display:flex;gap:6px;padding:5px;border-radius:16px;background:var(--sf);border:1px solid var(--bd);margin:18px 0 22px;overflow-x:auto;width:fit-content;max-width:100%}
+.tab{border:0;background:none;color:var(--mu);font:600 .9rem Inter,sans-serif;padding:10px 16px;border-radius:12px;cursor:pointer;white-space:nowrap;min-height:44px}
+.tab.on{background:var(--ac);color:var(--on)}.tab small{opacity:.7;margin-left:4px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:20px;overflow:hidden;transition:box-shadow .3s,border-color .3s;will-change:transform}
+.card:hover{border-color:var(--ac);box-shadow:0 18px 40px var(--gl)}
+.ph{aspect-ratio:16/10;width:100%;object-fit:cover;display:block;background:linear-gradient(135deg,var(--ac2),var(--bd));position:relative}
+div.ph .bw{position:absolute;inset:14% 12% auto;height:34px;border-radius:10px 10px 0 0;background:var(--sf);display:flex;align-items:center;gap:5px;padding:0 10px;font-size:.7rem;color:var(--mu)}
+.bw i{width:7px;height:7px;border-radius:50%;background:var(--bd)}.bw span{margin-left:8px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+div.ph b{position:absolute;inset:calc(14% + 34px) 12% 0;background:var(--sf);opacity:.7;display:grid;place-items:center;font:700 3rem var(--hd);color:var(--ac)}
+.card .b{padding:18px}.card h3{font-size:1.2rem;margin-bottom:6px}.card p{margin:0 0 12px;color:var(--mu);font-size:.93rem}
+.ex{display:grid;gap:4px;padding:20px;border:1px solid var(--bd);border-radius:20px;background:var(--sf);margin-bottom:14px}
+.ex h3{margin:0;font-size:1.15rem}.ex small{color:var(--ac);font-weight:600}.ex p{margin:6px 0 0;color:var(--mu);font-size:.94rem}
+.bk{background:var(--sf);border:1px solid var(--bd);border-radius:26px;padding:22px;display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}.bk>*{min-width:0}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.dc,.sl{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:12px;cursor:pointer;font:600 .85rem Inter,sans-serif;min-height:44px;padding:0 14px;white-space:nowrap}
+.dc.on,.sl.on{background:var(--ac);color:var(--on);border-color:var(--ac)}
+.dh{display:flex;justify-content:space-between;align-items:center;margin:2px 0 10px}.dh b{font:700 1.05rem var(--hd)}.dh span{display:flex;gap:6px}
+.ar2{width:40px;height:40px;border-radius:12px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font-size:22px;line-height:1;cursor:pointer}.ar2[disabled]{opacity:.3;cursor:default}
+.dg{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;margin-bottom:14px}
+.dc{display:grid;gap:2px;align-content:center;justify-items:center;padding:8px 0;min-height:62px}.dc small{font-size:.7rem;font-weight:500;opacity:.75}.dc b{font:700 1.15rem var(--hd)}
+.tabs::-webkit-scrollbar{display:none}.tabs{scrollbar-width:none}
+.cg{display:grid;gap:24px}
+.fcard{background:var(--sf);border:1px solid var(--bd);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:14px}.fcard h3{margin:0;font-size:1.2rem}
+.fcard form{flex:1;grid-template-rows:auto auto 1fr auto}.fcard form label:nth-of-type(3){grid-template-rows:auto 1fr}.fcard textarea{height:100%;min-height:110px}
+.ip{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:6px;margin-top:6px}.ib2{height:44px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);cursor:pointer;display:grid;place-items:center}.ib2.on{background:var(--ac);color:var(--on);border-color:var(--ac)}
+.cal{border:1px solid var(--bd);border-radius:18px;padding:14px;background:var(--bg);max-width:420px}
+.cw,.cgr{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.cw span{text-align:center;font-size:.72rem;color:var(--mu);font-weight:600;padding:4px 0}
+.cd{height:42px;border-radius:12px;border:1px solid transparent;background:none;color:var(--mu);opacity:.35;font:500 .9rem Inter,sans-serif;display:grid;place-items:center;position:relative;padding:0}
+.cd.av{opacity:1;color:var(--tx);cursor:pointer;background:var(--sf);border-color:var(--bd);font-weight:600}.cd.av:hover{border-color:var(--ac)}
+.cd.on{background:var(--ac);color:var(--on);border-color:var(--ac)}.cd.td::after{content:"";position:absolute;bottom:5px;width:4px;height:4px;border-radius:50%;background:var(--ac)}.cd.on.td::after{background:var(--on)}
+.tp{gap:8px;max-width:420px}.tlab{font:600 .72rem Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}.tv{font:700 1.5rem var(--hd);color:var(--ac);padding:2px 0 4px}.tg{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.ap{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:4px}.tb{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:10px;min-height:42px;font:600 .9rem Inter,sans-serif;cursor:pointer;padding:0;transition:.15s}.tb:hover{border-color:var(--ac)}.tb.on{background:var(--ac);border-color:var(--ac);color:var(--on)}.sd{font:700 .95rem var(--hd);margin:16px 0 10px}.cd.ad{opacity:1;color:var(--tx);cursor:pointer;background:var(--sf);border-color:var(--bd)}.cd.ad[disabled]{opacity:.3;cursor:default}.cd.has{background:var(--ac2);color:var(--ac);border-color:var(--ac);font-weight:700}.cd.fc{outline:2px solid var(--ac);outline-offset:1px}.ca .cal{background:var(--bg)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:8px}
+.cc{display:flex;gap:14px;align-items:center;padding:14px;border:1px solid var(--bd);border-radius:16px;background:var(--sf);text-decoration:none;margin-bottom:10px}
+.cc .si{--c:var(--ac)}.cc>span:last-child{min-width:0}.si img{width:100%;height:100%;object-fit:contain;padding:8px}.cc small{display:block;color:var(--mu);font-size:.78rem}.cc b{font-size:.95rem;word-break:break-word}
+form,.fm{display:grid;gap:12px;align-content:start}input,textarea,select{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font:inherit;font-size:16px}
+textarea{min-height:110px;resize:vertical}label{font-size:.85rem;font-weight:600;display:grid;gap:5px}
+input[type=checkbox]{width:auto}label.ck{display:flex;align-items:center;gap:6px;font-weight:500}
+footer{padding:14px 0 calc(84px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--bd);color:var(--mu);font-size:.82rem;text-align:center}footer p{margin:0}.fr{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px}.fs{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}.fs .so{width:34px;height:34px;border-radius:10px}.fs .so svg{width:16px;height:16px}
+.hp{position:absolute;left:-9999px}
+#edit{position:fixed;right:16px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:30;display:none}
+#admin{position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto;display:none}#admin.on{display:block}
+.ahd{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
+.ar{display:flex;align-items:center;gap:8px;padding:10px 16px;max-width:1100px;margin:0 auto}.ar h2{margin:0;flex:1;font-size:1.15rem}
+.am{display:flex;gap:6px;overflow-x:auto;padding:0 16px 10px;max-width:900px;margin:0 auto;scrollbar-width:none}.am::-webkit-scrollbar{display:none}
+.am2{display:flex;gap:6px;flex-wrap:wrap}
+.pl{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--bd);background:var(--sf);color:var(--mu);border-radius:99px;padding:0 14px;min-height:40px;font:600 .85rem Inter,sans-serif;cursor:pointer;white-space:nowrap}.pl.on{background:var(--ac);border-color:var(--ac);color:var(--on)}
+.ab{min-width:0;padding:16px 16px calc(48px + env(safe-area-inset-bottom,0px))}
+.ca{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:16px;margin-bottom:14px;display:grid;gap:12px}.ca h3{margin:0;font-size:1rem}
+.hn{margin:0;color:var(--mu);font-size:.8rem}
+.fg{display:grid;gap:12px}
+.lt{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+details.it{background:var(--sf);border:1px solid var(--bd);border-radius:14px;margin-bottom:10px;overflow:hidden}
+details.it>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:10px 14px;min-height:60px}details.it>summary::-webkit-details-marker{display:none}
+details.it>summary::after{content:"▾";margin-left:auto;color:var(--mu)}details.it[open]>summary::after{content:"▴"}
+details.it[open]>summary{border-bottom:1px solid var(--bd)}
+details.it>.fg,details.it>.up{padding:14px}
+.st2{display:grid;min-width:0}.st2 b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.st2 small{color:var(--mu)}
+.th{width:40px;height:40px;border-radius:10px;background:var(--ac2);color:var(--ac);display:grid;place-items:center;font:700 1.1rem var(--hd);flex:none}
+details.it summary img{width:40px;height:40px;object-fit:cover;border-radius:10px;flex:none}
+.dot{width:14px;height:14px;border-radius:50%;flex:none}
+.up{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:.85rem}.up img{width:56px;height:56px;object-fit:cover;border-radius:10px}
+#admin input,#admin textarea,#admin select{padding:10px 12px;border-radius:10px}
+.sr{border:1px solid var(--bd);border-radius:14px;padding:12px;display:grid;gap:10px;background:var(--bg)}.sr .hd{display:flex;align-items:center;gap:10px}.sr .hd b{flex:1;font-size:.92rem}.sr .si{--c:var(--ac)}
+.alay{display:grid;grid-template-columns:minmax(0,1fr);max-width:1100px;margin:0 auto}
+.as{position:fixed;top:0;bottom:0;left:0;width:270px;max-width:84vw;z-index:60;background:var(--sf);border-right:1px solid var(--bd);padding:calc(16px + env(safe-area-inset-top,0px)) 12px 20px;overflow-y:auto;transform:translateX(-105%);transition:transform .25s;display:flex;flex-direction:column;gap:4px}
+#admin.mo .as{transform:none}.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:55;border:0}#admin.mo .ov{display:block}
+.as h4{margin:4px 10px 10px;font:700 .75rem var(--hd);letter-spacing:.12em;text-transform:uppercase;color:var(--mu)}
+.mi{display:flex;align-items:center;gap:10px;width:100%;min-height:46px;padding:0 12px;border:0;border-radius:12px;background:none;color:var(--mu);font:600 .92rem Inter,sans-serif;cursor:pointer;text-align:left}.mi:hover{background:var(--bg);color:var(--tx)}.mi.on{background:var(--ac);color:var(--on)}.mb{flex:none}
+@media(min-width:900px){.alay{grid-template-columns:250px minmax(0,1fr);gap:20px;padding:0 16px}.as{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);transform:none;width:auto;max-width:none;height:fit-content;max-height:calc(100vh - 100px);margin-top:16px;border:1px solid var(--bd);border-radius:18px;z-index:2}.mb,.ov{display:none!important}}
+@media(min-width:720px){.fg.f2{grid-template-columns:1fr 1fr}.fg.f2>.up,.fg.f2 label:has(textarea){grid-column:1/-1}}
+.ab2{display:grid;gap:24px}.cc:last-child{margin-bottom:0}
+@media(min-width:720px){nav .l{display:flex}.dock{display:none}#edit{bottom:24px}footer{padding-bottom:14px}.fr{justify-content:space-between}.hero{grid-template-columns:1fr 360px;padding-top:84px}.pw{width:330px;height:330px;order:2}.stats{grid-template-columns:repeat(4,1fr);margin-top:76px;margin-bottom:56px}.grid.c,.grid.sk{grid-template-columns:1fr 1fr}.cg{grid-template-columns:1fr 1fr;gap:36px}.ab2{grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}section{padding:44px 0}.bk{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);padding:30px}}
+@media(min-width:980px){.grid.c,.grid.s3{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){.mt,.pw::before,.grad{animation:none}}
+</style>
+<style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style></head>
+<body>
+
+<div id="prog"></div><nav><div class="w"><b id="nm">Tamim<i>.</i>dev</b><div class="l"><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Projects</a><a href="#exp">Experience</a><a href="#book">Book</a><a href="#contact">Contact</a></div><button class="ib" id="th" aria-label="Toggle theme">◐</button></div></nav>
+<div id="root"></div>
+<button class="btn p" id="edit">✎ Edit site</button>
+<div id="admin" class=""></div>
+<script id="data" type="application/json">{"site": {"name": "MD Saiful Islam Tamim", "role": "Shopify Developer", "avail": "Open to remote roles · US & UK friendly hours", "tagline": "I build fast, conversion-focused Shopify Plus storefronts with Liquid, Online Store 2.0, A/B testing and clean GA4 tracking.", "about": "Shopify developer with 2 years of hands-on Shopify and Shopify Plus experience and almost 5 years of web and front-end development. As Lead Shopify Developer at WebSense I shipped 7 live brand stores, including beauty and skincare brands, and I have published 3 Shopify themes on ThemeForest. I build from Figma, integrate apps and APIs, optimize speed and technical SEO, and run A/B tests with Varify.io. I work independently in remote teams and communicate clearly with design and marketing.", "heroImg": "hero.jpg", "email": "contact.sitamim@gmail.com", "phone": "+880 1893843850", "location": "Dhaka, Bangladesh (GMT+6) · Remote", "lang": "English (Fluent) · Bangla (Native)", "facebook": "https://www.facebook.com/sitamim500/", "instagram": "https://www.instagram.com/si_tamim_0point/", "linkedin": "https://www.linkedin.com/in/md-saiful-islam-tamim-089a06403/", "github": "https://github.com/tamimbost", "booking": "", "cal": {"days": [1, 2, 3, 4, 5], "start": 16, "end": 23, "dur": 30, "tz": 6, "title": "Intro call"}, "pinterest": "", "hide": {"facebook": false, "instagram": false, "linkedin": false, "youtube": false}, "youtube": "https://www.youtube.com/@thegrandprogrammer"}, "edu": "B.Sc. Computer Science & Engineering · North South University, Dhaka (2020 – 2024)", "stats": [{"n": 2, "s": "+", "l": "Years on Shopify Plus"}, {"n": 5, "s": "", "l": "Years front-end"}, {"n": 7, "s": "", "l": "Live brand stores"}, {"n": 3, "s": "", "l": "ThemeForest themes"}], "skills": [{"n": "Shopify & Shopify Plus", "pct": 95, "col": "#5a9e1f", "ic": "bag"}, {"n": "Liquid", "pct": 95, "col": "#10b981", "ic": "code"}, {"n": "JavaScript (ES6+)", "pct": 90, "col": "#f59e0b", "ic": "code"}, {"n": "jQuery", "pct": 95, "col": "#0ea5e9", "ic": "code"}, {"n": "HTML5 & CSS3", "pct": 95, "col": "#f97316", "ic": "layout"}, {"n": "Sass / Tailwind CSS", "pct": 88, "col": "#ec4899", "ic": "palette"}, {"n": "GSAP & Animation", "pct": 85, "col": "#84cc16", "ic": "sparkles"}, {"n": "Storefront & Cart API", "pct": 85, "col": "#8b5cf6", "ic": "cart"}, {"n": "Figma to Code", "pct": 92, "col": "#ef4444", "ic": "pen"}, {"n": "A/B Testing, GA4 & GTM", "pct": 85, "col": "#3b82f6", "ic": "bar"}, {"n": "Technical SEO & Speed", "pct": 85, "col": "#14b8a6", "ic": "zap"}, {"n": "Git & GitHub", "pct": 88, "col": "#64748b", "ic": "git"}], "services": [{"ic": "bag", "t": "Shopify Plus store builds", "d": "Custom Online Store 2.0 storefronts, landing, product and collection pages from Figma to launch."}, {"ic": "code", "t": "Theme customization & bug fixing", "d": "Liquid sections, blocks and JSON templates, plus clean fixes for code written by other developers."}, {"ic": "sparkles", "t": "CRO & A/B testing", "d": "Varify.io experiments, upsell widgets and UX improvements that lift engagement and conversion."}, {"ic": "zap", "t": "Speed, SEO & accessibility", "d": "Page speed, mobile usability, technical SEO and JSON-LD structured data."}, {"ic": "db", "t": "Apps & API integrations", "d": "Storefront API, webhooks, Node.js, subscriptions, reviews and data-sync fixes."}, {"ic": "bar", "t": "GA4 & GTM tracking", "d": "dataLayer ecommerce events so your team can measure product views, add to cart and purchases."}], "exp": [{"t": "Lead Shopify Developer", "c": "WebSense · 1 year", "d": "Built and maintained Shopify Plus storefronts on Online Store 2.0 for 7 live brands. Shipped a “Complete the Look” upsell widget that won its Varify.io A/B test, GA4 and GTM tracking for Nominalx, and an optimistic-UI cart drawer fix using the AJAX Cart API. Handled metafields, apps, webhooks, Storefront API integrations, speed and accessibility."}, {"t": "Shopify Theme Developer", "c": "ThemeForest Marketplace", "d": "Designed and built 3 complete Shopify themes (Ffood, Orgik, Furai) with OS 2.0 sections, customizable blocks and mobile-first, pixel-accurate layouts."}, {"t": "Freelance Web Developer", "c": "Upwork · Project-based", "d": "Worked directly with an international client in Malaysia and delivered a static website end-to-end."}, {"t": "Front End Developer", "c": "Website_Stock · Project-based", "d": "Delivered 4 approved ThemeForest HTML templates from Figma using Sass and GSAP. Templates became best sellers."}, {"t": "Front End Developer", "c": "Hibo Theme · Remote", "d": "Converted Figma designs to HTML, delivered an approved News template with cross-browser and marketplace quality."}, {"t": "Front End Developer", "c": "vecuro_themes · Project-based", "d": "Converted Figma designs into pixel-perfect HTML with custom animations and reusable components."}], "projects": [{"cat": "Shopify", "title": "Reviv Serums", "desc": "Skincare brand on Shopify Plus, built on Online Store 2.0.", "url": "https://www.revivserums.com/", "img": "", "tags": "Shopify Plus, Liquid"}, {"cat": "Shopify", "title": "Inner Dose", "desc": "Beauty brand storefront with custom sections and promo experiences.", "url": "https://innerdose.com.au/", "img": "", "tags": "Shopify Plus, OS 2.0"}, {"cat": "Shopify", "title": "Nominalx", "desc": "Store with GA4 and GTM ecommerce tracking and an A/B-tested upsell widget.", "url": "https://nominalx.com/", "img": "", "tags": "GA4, GTM, A/B test"}, {"cat": "Shopify", "title": "Nomkins UK", "desc": "Shopify Plus storefront with landing, product and collection pages.", "url": "https://nomkins.co.uk/", "img": "", "tags": "Shopify Plus"}, {"cat": "Shopify", "title": "Amber Jean Shop", "desc": "Brand storefront shipped from design handoff to launch.", "url": "https://amberjeanshop.com/", "img": "", "tags": "Shopify, Liquid"}, {"cat": "Shopify", "title": "Ballo Eyewear", "desc": "Eyewear store with a fast, responsive shopping experience.", "url": "https://balloeyewear.com/", "img": "", "tags": "Shopify, Performance"}, {"cat": "Shopify", "title": "Vertex Watches", "desc": "Watch brand storefront with polished product pages.", "url": "https://vertex-watches.com/", "img": "", "tags": "Shopify, UI"}, {"cat": "Themes", "title": "Ffood", "desc": "Published Shopify theme on ThemeForest for food stores.", "url": "https://ffood-store-demo.myshopify.com/", "img": "", "tags": "ThemeForest, OS 2.0"}, {"cat": "Themes", "title": "Orgik", "desc": "Published organic-store Shopify theme with customizable blocks.", "url": "https://orgik-theme.myshopify.com/", "img": "", "tags": "ThemeForest, Liquid"}, {"cat": "Themes", "title": "Furai", "desc": "Published Shopify theme with sections and mobile-first layouts.", "url": "https://furai-store-newdemo.myshopify.com/", "img": "", "tags": "ThemeForest, Sass"}, {"cat": "Frontend", "title": "Ekomart", "desc": "Ecommerce HTML template, Figma to responsive code.", "url": "https://html.themewant.com/ekomart/", "img": "", "tags": "HTML, Sass, GSAP"}, {"cat": "Frontend", "title": "Faith Ecommerce", "desc": "Ecommerce front-end deployed on Vercel.", "url": "https://faith-ecommerce.vercel.app/", "img": "", "tags": "Front-end"}, {"cat": "Frontend", "title": "Roda", "desc": "ThemeForest HTML template with custom animations.", "url": "https://html.vecurosoft.com/roda/demo/index.html", "img": "", "tags": "HTML, GSAP"}, {"cat": "Frontend", "title": "Seguro", "desc": "Approved ThemeForest HTML template.", "url": "https://templates.hibotheme.com/seguro/default/index.html", "img": "", "tags": "HTML, Sass"}, {"cat": "Frontend", "title": "Niger", "desc": "Approved ThemeForest HTML template.", "url": "https://templates.hibotheme.com/niger/default/index.html", "img": "", "tags": "HTML, Sass"}, {"cat": "Frontend", "title": "Mighty", "desc": "Best-selling ThemeForest HTML template.", "url": "https://html.themewant.com/mighty/", "img": "", "tags": "HTML, GSAP"}, {"cat": "Frontend", "title": "Weiboo", "desc": "Ecommerce HTML template.", "url": "https://reactheme.com/products/html/weiboo/index.html", "img": "", "tags": "HTML, CSS"}, {"cat": "Frontend", "title": "Pozu", "desc": "Approved ThemeForest HTML template.", "url": "https://templates.hibotheme.com/pozu/default/index.html", "img": "", "tags": "HTML, Sass"}, {"cat": "Frontend", "title": "Kiddino", "desc": "Kids-theme HTML template with playful animation.", "url": "https://html.vecurosoft.com/kiddino/demo/index.html", "img": "", "tags": "HTML, GSAP"}]}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let D=JSON.parse($("#data").textContent);const R=document.documentElement,img=id=>id?(id.includes(".")?"/seed/"+id:"/api/img/"+id):"";
+const CATS={Shopify:"Shopify Stores",Themes:"Shopify Themes",Frontend:"Front-end"};
+const IC={code:'<path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/>',bag:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',git:'<line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/>',layout:'<rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>',zap:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',bar:'<line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/>',search:'<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',pen:'<path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/>',cart:'<circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>',db:'<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/>',sparkles:'<path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17v4M17 19h4"/>',globe:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/>',palette:'<path d="M12 3a9 9 0 1 0 0 18c1 0 2-.8 2-2 0-1.2-1-1.5-1-2.5s1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16.5" cy="11" r="1"/>',star:'<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',rocket:'<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>',shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',heart:'<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',settings:'<line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/>',trend:'<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',tag:'<path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" x2="7.01" y1="7" y2="7"/>',clock:'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',check:'<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>',monitor:'<rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>',mobile:'<rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/>',lock:'<rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',wrench:'<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',award:'<circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/>',layers:'<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>',image:'<rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/>',truck:'<rect width="15" height="13" x="1" y="3"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>',file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>',pinterest:'<circle cx="12" cy="12" r="10"/><path d="M9.5 20.5 12 9.5"/><path d="M8.5 12.5c0-2.2 1.6-3.5 3.6-3.5 2 0 3.4 1.3 3.4 3.1 0 2.1-1.2 3.7-2.9 3.7-1 0-1.6-.6-1.8-1.4"/>',twitter:'<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>',youtube:'<path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/>',behance:'<path d="M3 6h6a3 3 0 0 1 0 6H3z"/><path d="M3 12h7a3 3 0 0 1 0 6H3z"/><path d="M14 8h6"/><path d="M14.5 15a3 3 0 1 0 5.9-1c-.3-1.2-1.4-2-2.9-2s-2.6.9-3 2z"/>',dribbble:'<circle cx="12" cy="12" r="10"/><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"/><path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"/><path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"/>',upwork:'<rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>',telegram:'<path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>',cap:'<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/>',mail:'<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/>',phone:'<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>',pin:'<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',cal:'<rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',whatsapp:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',facebook:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',instagram:'<rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"/>',linkedin:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>',github:'<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.1-1.3-.3-2.5-1-3.5.3-1.2.3-2.4 0-3.5 0 0-1 0-3 1.5a13 13 0 0 0-8 0C6 2 5 2 5 2c-.3 1.1-.3 2.3 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.4.5-.7 1.1-.9 1.7-.2.6-.2 1.2-.1 1.8v4"/><path d="M9 18c-4.5 2-5-2-7-2"/>'};
+const ICN=["bag","cart","code","layout","palette","sparkles","pen","bar","trend","zap","git","db","search","globe","star","rocket","shield","heart","users","settings","tag","clock","check","monitor","mobile","lock","wrench","target","award","layers","image","truck","file","mail"];
+const I=(n,s=22)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]||IC.code}</svg>`;
+const ico=(o,z)=>o.iu?`<img src="${img(o.iu)}" alt="">`:I(o.ic,z);
+const G=window.gsap&&window.ScrollTrigger?gsap:null;if(G)gsap.registerPlugin(ScrollTrigger);
+const RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+try{const t=localStorage.getItem("theme");if(t)R.dataset.theme=t}catch(e){}
+$("#th").onclick=()=>{const d=R.dataset.theme?R.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;R.dataset.theme=d?"light":"dark";try{localStorage.setItem("theme",R.dataset.theme)}catch(e){}};
+let tab="Shopify",data=D;
+const dom=u=>{try{return new URL(u).hostname.replace("www.","")}catch(e){return ""}};
+function cards(){return data.projects.filter(p=>(p.cat||"Shopify")===tab).map(p=>`<div class="card pc">${p.img?`<img class="ph" src="${img(p.img)}" alt="${esc(p.title)}" loading="lazy">`:`<div class="ph"><div class="bw"><i></i><i></i><i></i><span>${esc(dom(p.url))}</span></div><b>${esc((p.title||"?")[0])}</b></div>`}<div class="b"><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><div class="chips" style="margin-bottom:14px">${(p.tags||"").split(",").filter(x=>x.trim()).map(t=>`<span class="chip">${esc(t.trim())}</span>`).join("")}</div>${p.url?`<a class="btn sm" href="${esc(p.url)}" target="_blank" rel="noopener">Visit ↗</a>`:""}</div></div>`).join("")||'<p class="mu">No projects in this tab yet.</p>'}
+function showTab(t,anim){tab=t;$$(".tab").forEach(b=>b.classList.toggle("on",b.dataset.t===t));$("#pg").innerHTML=cards();tilt();if(G&&anim&&!RM)gsap.from("#pg .pc",{y:36,opacity:0,scale:.96,duration:.55,stagger:.07,ease:"power3.out"})}
+function tilt(){if(!G||RM||!matchMedia("(hover:hover)").matches)return;$$(".card").forEach(c=>{c.onmousemove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;gsap.to(c,{rotationY:x*8,rotationX:-y*8,transformPerspective:800,duration:.4})};c.onmouseleave=()=>gsap.to(c,{rotationX:0,rotationY:0,duration:.5})})}
+const SOC=[["facebook","Facebook"],["instagram","Instagram"],["linkedin","LinkedIn"],["pinterest","Pinterest"],["twitter","X (Twitter)"],["youtube","YouTube"],["behance","Behance"],["dribbble","Dribbble"],["upwork","Upwork"],["telegram","Telegram"],["github","GitHub"]];
+const wa=s=>"https://wa.me/"+String(s.phone||"").replace(/\D/g,"");
+const soc=s=>{const h=s.hide||{};return SOC.filter(([k])=>s[k]&&!h[k]).map(([k,n])=>`<a class="so" href="${esc(s[k])}" target="_blank" rel="noopener" aria-label="${n}">${I(k,20)}</a>`).join("")+(s.phone&&!h.whatsapp?`<a class="so" href="${wa(s)}" target="_blank" rel="noopener" aria-label="WhatsApp">${I("whatsapp",20)}</a>`:"")};
+// booking
+let bk={day:null,slot:null};
+const P2=n=>String(n).padStart(2,"0");
+function initBook(s){const c=s.cal,host=$("#bk");if(!host)return;
+ const P=P2,now=new Date(),today=now.toLocaleDateString("en-CA"),tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"";
+ let cy=now.getFullYear(),cm=now.getMonth();const fy=cy,fm=cm;bk={day:null,h:null,mi:null,ap:"PM"};
+ host.innerHTML=`<div><span class="ey">1 · Pick a date &amp; time</span><div class="cal"><div class="dh"><b id="mo"></b><span><button class="ar2" id="pv" aria-label="Previous month">‹</button><button class="ar2" id="nx" aria-label="Next month">›</button></span></div><div class="cw">${["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map(d=>`<span>${d}</span>`).join("")}</div><div class="cgr" id="cg"></div></div><p class="sd" id="sd"></p><div id="tl" class="tp" style="display:none"></div></div>
+ <div class="fm"><span class="ey">2 · Your details</span><label>Name<input id="bn" autocomplete="name"></label><label>Email<input id="be" type="email" autocomplete="email"></label><label>What do you need? (optional)<textarea id="bt" style="min-height:70px"></textarea></label><button class="btn p" id="bg" disabled>${I("cal",18)} Request this meeting</button><p class="mu" id="bs" style="font-size:.82rem;margin:0">Choose a date and time, then fill your name and email. I will confirm by email.</p></div>`;
+ const start=()=>bk.day&&bk.h!=null&&bk.mi!=null?new Date(bk.day+"T"+P(bk.h%12+(bk.ap==="PM"?12:0))+":"+P(bk.mi)).getTime():0;
+ const chk=()=>{const t=start(),ok=t>Date.now()&&$("#bn").value.trim()&&/\S+@\S+\.\S+/.test($("#be").value);$("#bg").disabled=!ok};
+ const paint=()=>{const first=new Date(cy,cm,1).getDay(),n=new Date(cy,cm+1,0).getDate();let h="";for(let i=0;i<first;i++)h+="<i></i>";
+  for(let d=1;d<=n;d++){const k=`${cy}-${P(cm+1)}-${P(d)}`,past=k<today;h+=`<button class="cd${past?"":" av"}${k===bk.day?" on":""}${k===today?" td":""}"${past?" disabled":` data-d="${k}"`}>${d}</button>`}
+  $("#cg").innerHTML=h;$("#mo").textContent=new Date(cy,cm,1).toLocaleDateString(undefined,{month:"long",year:"numeric"});$("#pv").disabled=cy===fy&&cm===fm;
+  $("#sd").textContent=bk.day?new Date(bk.day+"T00:00:00").toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"Select a date";
+  $("#tl").style.display=bk.day?"grid":"none";const ok=bk.h!=null&&bk.mi!=null;
+  $("#tl").innerHTML=`<span class="tlab">Time</span><div class="tv">${ok?bk.h+":"+P(bk.mi)+" "+bk.ap:"Select a time"}</div><span class="tlab">Hour</span><div class="tg">${[...Array(12)].map((_,i)=>`<button class="tb${bk.h===i+1?" on":""}" data-h="${i+1}">${i+1}</button>`).join("")}</div><span class="tlab">Minute</span><div class="tg">${[...Array(12)].map((_,i)=>`<button class="tb${bk.mi===i*5?" on":""}" data-mi="${i*5}">${P(i*5)}</button>`).join("")}</div><div class="ap">${["AM","PM"].map(a=>`<button class="tb${bk.ap===a?" on":""}" data-ap="${a}">${a}</button>`).join("")}</div>`;chk()};
+ host.onclick=e=>{const d=e.target.closest(".cd"),a=e.target.closest(".ar2");
+  if(a&&!a.disabled){cm+=a.id==="nx"?1:-1;if(cm>11){cm=0;cy++}if(cm<0){cm=11;cy--}paint()}
+  if(d&&d.dataset.d){bk.day=d.dataset.d;paint()}
+  const b=e.target.closest(".tb");if(b){if(b.dataset.h)bk.h=+b.dataset.h;if(b.dataset.mi!==undefined)bk.mi=+b.dataset.mi;if(b.dataset.ap)bk.ap=b.dataset.ap;paint()}};
+ host.oninput=host.onchange=chk;
+ const info=()=>`Name: ${$("#bn").value}\nEmail: ${$("#be").value}\nTime: ${new Date(start()).toLocaleString()} (${tz})\n${$("#bt").value}`;
+ const open=u=>{const a=document.createElement("a");a.href=u;a.target="_blank";a.rel="noopener";a.click()};
+ $("#bg").onclick=async()=>{const t=start(),b=$("#bg");b.disabled=true;b.textContent="Sending…";
+ try{const r=await fetch("/api/book",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({name:$("#bn").value,email:$("#be").value,note:$("#bt").value,start:t,dur:c.dur||30,title:c.title||"Meeting",tz})});if(!r.ok)throw 0;
+  const f=x=>new Date(x).toISOString().replace(/[-:]|\.\d{3}/g,""),g="https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:(c.title||"Meeting")+" with "+s.name,dates:f(t)+"/"+f(t+(c.dur||30)*6e4),details:"Booked via portfolio.",add:s.email});
+  $("#bs").innerHTML="✅ Request sent! I will confirm by email. <a href=\""+esc(g)+"\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--ac)\">Add it to your Google Calendar</a>";b.textContent="Request sent"}
+ catch(x){$("#bs").textContent="Could not send right now. Please email me at "+s.email;b.disabled=false;b.textContent="Request this meeting"}};
+ paint()}
+function render(d){
+ data=d;const s=d.site,ini=s.name.split(" ").filter(Boolean).map(w=>w[0]).slice(0,2).join("");
+ $("#nm").innerHTML=esc(s.name.split(" ").slice(-1)[0])+"<i>.</i>dev";document.title=s.name+" – "+s.role;
+ const words=s.name.split(" "),mid=Math.ceil(words.length/2),sk=d.skills.map(k=>`<span class="chip">${esc(k.n)}</span>`).join("");
+ $("#root").innerHTML=`<div id="glow"></div>
+<div class="w"><div class="hero"><div class="blob" style="width:320px;height:320px;right:-80px;top:-40px"></div>
+ <div class="pw rv">${s.heroImg?`<img class="pic" src="${img(s.heroImg)}" alt="${esc(s.name)}">`:`<div class="pic">${esc(ini)}</div>`}<span class="bd">${esc(s.avail)}</span></div>
+ <div><span class="ey hi">${esc(s.role)}</span><h1><span class="ln"><span class="hl">${esc(words.slice(0,mid).join(" "))}</span></span><span class="ln"><span class="hl grad">${esc(words.slice(mid).join(" "))}</span></span></h1><p class="mu hi" style="max-width:520px">${esc(s.tagline)}</p>
+ <div class="row hi"><a class="btn p" href="#book">${I("cal",18)} Book a call</a><a class="btn" href="#work">View projects ↓</a></div></div></div>
+ <div class="stats">${d.stats.map(x=>`<div class="st rv"><b><span class="cn" data-n="${+x.n}">${+x.n}</span>${esc(x.s)}</b><span>${esc(x.l)}</span></div>`).join("")}</div></div>
+<section id="about"><div class="w ab2"><div class="rv"><span class="ey">About me</span><h2>Code that looks sharp and sells.</h2><p class="mu">${esc(s.about)}</p></div><div class="rv"><div class="cc"><span class="si">${I("cap",20)}</span><span><small>Education</small><b>${esc(d.edu)}</b></span></div><div class="cc"><span class="si">${I("pin",20)}</span><span><small>Based in</small><b>${esc(s.location)}</b></span></div><div class="cc"><span class="si">${I("globe",20)}</span><span><small>Languages</small><b>${esc(s.lang||"English (Fluent) · Bangla (Native)")}</b></span></div></div></div></section>
+<section id="services"><div class="w"><span class="ey rv">What I do</span><h2 class="rv">Services</h2><div class="grid c s3">${d.services.map(v=>`<div class="sv rv"><span class="si">${ico(v,24)}</span><h3>${esc(v.t)}</h3><p>${esc(v.d)}</p></div>`).join("")}</div></div></section>
+<section id="skills"><div class="w"><span class="ey rv">Toolbox</span><h2 class="rv">Skills</h2><div class="grid sk" style="margin-top:20px">${d.skills.map(k=>`<div class="sc rv" style="--c:${esc(k.col)}"><div class="sh"><span class="si">${ico(k,20)}</span><b>${esc(k.n)}</b><em>${+k.pct}%</em></div><div class="tr"><i class="fl" style="width:${Math.min(100,+k.pct||0)}%"></i></div></div>`).join("")}</div></div></section>
+<section id="work"><div class="w"><span class="ey rv">Selected work</span><h2 class="rv">Projects</h2>
+ <div class="tabs rv">${Object.keys(CATS).map(k=>`<button class="tab" data-t="${k}">${CATS[k]}<small>${d.projects.filter(p=>(p.cat||"Shopify")===k).length}</small></button>`).join("")}</div><div class="grid c" id="pg"></div></div></section>
+<section id="exp"><div class="w"><span class="ey rv">Journey</span><h2 class="rv">Experience</h2>${d.exp.map(e=>`<div class="ex rv"><small>${esc(e.c)}</small><h3>${esc(e.t)}</h3><p>${esc(e.d)}</p></div>`).join("")}</div></section>
+<section id="book"><div class="w"><span class="ey rv">Let’s talk</span><h2 class="rv">Book a meeting</h2><div class="bk rv" id="bk"></div>${s.booking?`<p style="margin-top:14px"><a class="btn" href="${esc(s.booking)}" target="_blank" rel="noopener">${I("cal",18)} Open my Google Calendar scheduler</a></p>`:""}</div></section>
+<section id="contact"><div class="w cg"><div class="rv"><span class="ey">Contact</span><h2>Say hello.</h2><p class="mu">Have a store to build, speed up or fix? Message me and it lands straight in my inbox.</p>
+<a class="cc" href="mailto:${esc(s.email)}"><span class="si">${I("mail",20)}</span><span><small>Email</small><b>${esc(s.email)}</b></span></a>
+${s.phone?`<a class="cc" href="tel:${esc(s.phone.replace(/[^+\d]/g,""))}"><span class="si">${I("phone",20)}</span><span><small>Phone</small><b>${esc(s.phone)}</b></span></a><a class="cc" href="${wa(s)}" target="_blank" rel="noopener"><span class="si">${I("whatsapp",20)}</span><span><small>WhatsApp</small><b>Chat now</b></span></a>`:""}
+<div class="cc"><span class="si">${I("pin",20)}</span><span><small>Location</small><b>${esc(s.location)}</b></span></div>${soc(s)?`<div class="row">${soc(s)}</div>`:""}</div>
+<div class="fcard rv"><h3>Send a message</h3><form id="cf"><input class="hp" name="hp" tabindex="-1" autocomplete="off">
+<label>Name<input name="name" required autocomplete="name"></label><label>Email<input type="email" name="email" required autocomplete="email"></label><label>Message<textarea name="message" required></textarea></label><button class="btn p" type="submit">Send message →</button><p class="mu" id="cs" style="margin:0;font-size:.85rem"></p></form></div></div></section>
+<footer><div class="w"><p>© ${new Date().getFullYear()} ${esc(s.name)} · ${esc(s.role)}</p></div></footer>
+<div class="dock"><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#book">Book</a><a href="#contact">Contact</a></div>`;
+ $("#cf").addEventListener("submit",async e=>{e.preventDefault();const f=e.target,b=f.querySelector("button"),st=$("#cs"),q=f.elements;b.disabled=true;b.textContent="Sending…";
+  try{const r=await fetch("/api/contact",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({name:q.name.value,email:q.email.value,message:q.message.value,hp:q.hp.value})});if(!r.ok)throw 0;f.reset();st.textContent="Thanks! Your message was sent. I will reply soon."}
+  catch(x){st.textContent="Could not send right now. Please email me at "+s.email}b.disabled=false;b.textContent="Send message →"});
+ $$(".tab").forEach(b=>b.onclick=()=>showTab(b.dataset.t,true));showTab(tab,false);initBook(s);animate()}
+function animate(){if(!G||RM)return;ScrollTrigger.getAll().forEach(t=>t.kill());
+ gsap.from(".hl",{yPercent:110,duration:1,stagger:.12,ease:"expo.out"});
+ gsap.from(".hi",{y:24,opacity:0,duration:.8,stagger:.1,delay:.35,ease:"power3.out"});
+ gsap.to(".pw",{y:-10,duration:2.6,yoyo:true,repeat:-1,ease:"sine.inOut"});
+ ScrollTrigger.batch(".rv",{start:"top 90%",once:true,onEnter:b=>gsap.fromTo(b,{y:40,opacity:0},{y:0,opacity:1,duration:.8,stagger:.08,ease:"power3.out"})});
+ $$(".cn").forEach(el=>{const n=+el.dataset.n,o={v:0};ScrollTrigger.create({trigger:el,start:"top 94%",once:true,onEnter:()=>gsap.to(o,{v:n,duration:1.6,ease:"power2.out",onUpdate:()=>el.textContent=Math.round(o.v)})})});
+ $$(".fl").forEach(el=>gsap.from(el,{width:0,duration:1.4,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 94%",once:true}}));
+ gsap.to("#prog",{scaleX:1,ease:"none",scrollTrigger:{start:0,end:"max",scrub:.2}});
+ gsap.to(".blob",{yPercent:30,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+ if(matchMedia("(hover:hover)").matches){const g=$("#glow"),x=gsap.quickTo(g,"x",{duration:.5}),y=gsap.quickTo(g,"y",{duration:.5});addEventListener("mousemove",e=>{x(e.clientX);y(e.clientY)})}}
+(async()=>{try{const r=await fetch("/api/content",{cache:"no-cache"});if(r.ok){const j=await r.json();if(j&&j.site)D=j}}catch(e){}render(D)})();
+
+// ---- admin (owner/editor only) ----
+let draft,artifact,assets,openK=new Set(),adm="site",pf="all";
+const get=(o,p)=>p.split(".").reduce((a,k)=>a?.[k],o);
+const set=(o,p,v)=>{const k=p.split("."),l=k.pop();k.reduce((a,x)=>a[x],o)[l]=v};
+const opts=o=>Array.isArray(o)?o.map(x=>[x,x]):Object.entries(o);
+const LIST={
+ projects:{s:"title",f:[{k:"img",t:"img"},{k:"cat",l:"Tab",t:"sel",o:CATS},{k:"title",l:"Title"},{k:"desc",l:"Description",t:"ta"},{k:"url",l:"Project link"},{k:"tags",l:"Tags (comma separated)"}],b:{cat:"Shopify",title:"New project",desc:"",url:"",img:"",tags:""}},
+ skills:{s:"n",f:[{k:"n",l:"Skill name"},{k:"pct",l:"Percent (0-100)",t:"num",max:100},{k:"col",l:"Bar color",t:"color"},{k:"ic",l:"Icon",t:"icon"},{k:"iu",l:"Or upload your own icon image (optional)",t:"img"}],b:{n:"New skill",pct:80,col:"#0b8a63",ic:"code",iu:""}},
+ stats:{s:"l",f:[{k:"n",l:"Number",t:"num"},{k:"s",l:"Suffix (e.g. +)"},{k:"l",l:"Label"}],b:{n:1,s:"",l:"Label"}},
+ services:{s:"t",f:[{k:"ic",l:"Icon",t:"icon"},{k:"iu",l:"Or upload your own icon image (optional)",t:"img"},{k:"t",l:"Title"},{k:"d",l:"Description",t:"ta"}],b:{ic:"code",iu:"",t:"New service",d:""}},
+ exp:{s:"t",f:[{k:"t",l:"Role"},{k:"c",l:"Company · period"},{k:"d",l:"Details",t:"ta"}],b:{t:"Role",c:"Company · 2024",d:""}}};
+const MENU=[["hero","Hero","sparkles"],["about","About","users"],["contact","Contact","phone"],["book","Booking","cal"],["stats","Stats","bar"],["services","Services","bag"],["skills","Skills","zap"],["projects","Projects","layout"],["exp","Experience","code"]];
+const DAYS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function upl(l,p){const v=get(draft,p);return `<div class="up">${v?`<img src="${img(v)}" alt="">`:""}<label class="btn sm" style="cursor:pointer">${l}<input type="file" accept="image/*" data-up="${p}" hidden></label>${v?`<button class="btn sm" data-clr="${p}">Remove</button>`:""}</div>`}
+function ctl(f,p){const v=get(draft,p)??"",l=f.l||f.k;
+ if(f.t==="img")return upl(f.l||"Upload image",p);
+ if(f.t==="icon")return `<div style="grid-column:1/-1"><b style="font-size:.85rem">${l}</b><div class="ip">${ICN.map(n=>`<button type="button" class="ib2${n===v?" on":""}" data-ic="${p}|${n}" aria-label="${n}">${I(n,20)}</button>`).join("")}</div></div>`;
+ if(f.t==="ta")return `<label>${l}<textarea data-k="${p}">${esc(v)}</textarea></label>`;
+ if(f.t==="num")return `<label>${l}<input type="number" inputmode="numeric" min="0" ${f.max?`max="${f.max}"`:""} data-num data-k="${p}" value="${esc(v)}"></label>`;
+ if(f.t==="color")return `<label>${l}<input type="color" data-k="${p}" value="${esc(v||"#0b8a63")}" style="height:44px;padding:4px"></label>`;
+ if(f.t==="sel")return `<label>${l}<select data-k="${p}">${opts(f.o).map(([a,b])=>`<option value="${a}"${a===v?" selected":""}>${b}</option>`).join("")}</select></label>`;
+ return `<label>${l}<input data-k="${p}" value="${esc(v)}"></label>`}
+const card=(t,b)=>`<div class="ca"><h3>${t}</h3>${b}</div>`,fg=(b,two)=>`<div class="fg${two?" f2":""}">${b}</div>`,hint=t=>`<p class="hn">${t}</p>`,T=(l,p,t)=>ctl({l,t},p);
+function panel(){const s=draft.site;
+ if(adm==="hero")return card("Hero photo",upl("Upload hero image","site.heroImg")+hint("A square photo works best."))+card("Hero text",fg(T("Name","site.name")+T("Title / role","site.role"),1)+T("Availability badge","site.avail")+T("Tagline","site.tagline","ta"));
+ if(adm==="about")return card("About me",T("About text","site.about","ta"))+card("Details",T("Education line","edu")+T("Languages","site.lang"));
+ if(adm==="contact")return card("Contact details",fg(T("Email","site.email")+T("Phone (with country code)","site.phone")+T("Location","site.location"),1))+card("Social icons",hint("Add a link, then choose which icons to show. Hidden icons never appear on the site.")+[...SOC,["whatsapp","WhatsApp (uses your phone number)"]].map(([k,n])=>{const h=draft.site.hide||{},on=!h[k],ok=k==="whatsapp"?!!draft.site.phone:!!draft.site[k];return `<div class="sr"><div class="hd"><span class="si">${I(k,18)}</span><b>${n}</b><button class="pl${on&&ok?" on":""}" data-sh="${k}">${!on?"Hidden":ok?"Shown":"Add a link"}</button></div>${k==="whatsapp"?"":ctl({l:"Link URL"},"site."+k)}</div>`}).join(""))
+ ;
+ if(adm==="book")return card("Meeting",fg(T("Meeting title","site.cal.title")+ctl({l:"Meeting length (minutes)",t:"num"},"site.cal.dur"),1)+hint("Visitors pick any date and time from a normal calendar. You confirm by email."))+card("Optional scheduler",T("Google Calendar appointment-schedule link","site.booking")+hint("Adds an extra button under the booking form."));
+ return lp(adm)}
+function lp(key){const L=LIST[key],arr=draft[key];
+ let h=`<div class="lt"><b>${arr.length} items</b><button class="btn p sm" data-add="${key}">＋ Add new</button></div>`;
+ if(key==="projects")h+=`<div class="am2" style="margin-bottom:12px">${[["all","All"],...Object.entries(CATS)].map(([k,n])=>`<button class="pl${pf===k?" on":""}" data-pf="${k}">${n}</button>`).join("")}</div>`;
+ return h+arr.map((it,i)=>{if(key==="projects"&&pf!=="all"&&(it.cat||"Shopify")!==pf)return"";
+  const th=key==="projects"?(it.img?`<img src="${img(it.img)}" alt="">`:`<span class="th">${esc((it.title||"?")[0])}</span>`):key==="skills"?`<span class="dot" style="background:${esc(it.col)}"></span>`:"";
+  const sub=key==="projects"?CATS[it.cat||"Shopify"]:key==="skills"?it.pct+"%":key==="exp"?it.c:key==="stats"?it.n+(it.s||""):(it.d||"").slice(0,44);
+  return `<details class="it" data-key="${key}.${i}"><summary>${th}<span class="st2"><b>${esc(it[L.s]||"Untitled")}</b><small>${esc(sub)}</small></span></summary><div class="fg f2">${L.f.map(f=>ctl(f,`${key}.${i}.${f.k}`)).join("")}</div><div class="up"><button class="btn sm" data-mv="${key},${i},-1">↑ Up</button><button class="btn sm" data-mv="${key},${i},1">↓ Down</button><button class="btn sm" data-del="${key},${i}">Delete</button></div></details>`}).join("")}
+function adminUI(keep){const y=keep?$("#admin").scrollTop:0;
+ $$("#admin details[open]").forEach(x=>openK.add(x.dataset.key));
+ $("#admin").innerHTML=`<div class="ahd"><div class="ar"><button class="ib mb" data-tog aria-label="Menu">☰</button><h2>${esc(MENU.find(m=>m[0]===adm)[1])}</h2><button class="btn sm" id="cancel">Close</button><button class="btn p sm" id="save">Save &amp; publish</button></div></div><div class="alay"><aside class="as"><h4>Site editor</h4>${MENU.map(([k,n,ic])=>`<button class="mi${adm===k?" on":""}" data-m="${k}">${I(ic,18)}${n}</button>`).join("")}<button class="mi" data-lo style="margin-top:auto">${I("lock",18)}Log out</button></aside><div class="ab">${panel()}</div></div><button class="ov" data-tog tabindex="-1" aria-label="Close menu"></button>`;
+ $$("#admin details").forEach(x=>x.open=openK.has(x.dataset.key));$("#admin").scrollTop=y}
+function open_(on){$("#admin").classList.remove("mo");$("#admin").classList.toggle("on",on);$("#edit").style.display=on?"none":"block";document.body.style.overflow=on?"hidden":""}
+const clearK=k=>{openK=new Set([...openK].filter(x=>!x.startsWith(k+".")))};
+async function uploadImg(file){const bmp=await createImageBitmap(file),sc=Math.min(1,1600/Math.max(bmp.width,bmp.height)),cv=document.createElement("canvas");cv.width=Math.round(bmp.width*sc);cv.height=Math.round(bmp.height*sc);cv.getContext("2d").drawImage(bmp,0,0,cv.width,cv.height);
+ const blob=await new Promise(r=>cv.toBlob(r,"image/webp",.85));const res=await fetch("/api/upload",{method:"POST",headers:{"content-type":"image/webp"},body:blob});if(!res.ok)throw new Error((await res.json().catch(()=>({}))).error||res.status);return res.json()}
+async function save(){const b=$("#save");b.textContent="Saving…";b.disabled=true;
+ try{const r=await fetch("/api/content",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify(draft)});if(!r.ok)throw new Error((await r.json().catch(()=>({}))).error||r.status);
+  D=structuredClone(draft);render(D);open_(false);toast("Saved! Your site is updated.")}
+ catch(x){b.textContent="Save";b.disabled=false;alert("Could not save: "+(x.message||x))}}
+function toast(t){const e=document.createElement("div");e.textContent=t;e.style.cssText="position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ac);color:var(--on);padding:12px 18px;border-radius:12px;font-weight:600;z-index:90";document.body.append(e);setTimeout(()=>e.remove(),2600)}
+function loginUI(){if($("#lg"))return;const d=document.createElement("div");d.id="lg";d.style.cssText="position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.6);display:grid;place-items:center;padding:20px";
+ d.innerHTML=`<div class="fcard" style="width:100%;max-width:360px"><h3>Admin login</h3><label>Password<input type="password" id="lp" autocomplete="current-password"></label><p class="mu" id="le" style="margin:0;font-size:.85rem"></p><div class="row" style="margin:0"><button class="btn" id="lx">Cancel</button><button class="btn p" id="lo">Log in</button></div></div>`;document.body.append(d);$("#lp").focus();
+ const go=async()=>{$("#le").textContent="";try{const r=await fetch("/api/login",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({password:$("#lp").value})});if(!r.ok)throw 0;d.remove();history.replaceState(null,"",location.pathname);$("#edit").style.display="block";toast("Logged in. Tap Edit site.")}catch(e){$("#le").textContent="Wrong password"}};
+ $("#lo").onclick=go;$("#lp").onkeydown=e=>{if(e.key==="Enter")go()};$("#lx").onclick=()=>{d.remove();history.replaceState(null,"",location.pathname)}}
+$("#admin").addEventListener("input",e=>{const t=e.target;if(t.dataset.k)set(draft,t.dataset.k,t.hasAttribute("data-num")?(+t.value||0):t.value)});
+$("#admin").addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;
+ if(t.id==="cancel")return open_(false);if(t.id==="save")return save();
+ $$("#admin details[open]").forEach(x=>openK.add(x.dataset.key));const d=t.dataset;
+ if(d.lo!==undefined){fetch("/api/logout",{method:"POST"}).then(()=>location.reload());return}
+ if(d.tog!==undefined){$("#admin").classList.toggle("mo");return}
+ if(d.m){adm=d.m;$("#admin").classList.remove("mo");adminUI(false);return}
+ if(d.pf)pf=d.pf;
+ else if(d.day!==undefined){const c=draft.site.cal,n=+d.day;c.days=c.days.includes(n)?c.days.filter(x=>x!==n):[...c.days,n]}
+ else if(d.add){const k=d.add,b={...LIST[k].b};if(k==="projects"&&pf!=="all")b.cat=pf;draft[k].unshift(b);clearK(k);openK.add(k+".0")}
+ else if(d.del){const[k,i]=d.del.split(",");if(!confirm("Delete this item?"))return;draft[k].splice(+i,1);clearK(k)}
+ else if(d.mv){const[k,i,s]=d.mv.split(","),a=+i,j=a+ +s,L=draft[k];if(j<0||j>=L.length)return;[L[a],L[j]]=[L[j],L[a]];clearK(k)}
+ else if(d.sh){const h=draft.site.hide??={};h[d.sh]=!h[d.sh]}
+ else if(d.ic){const[q,n]=d.ic.split("|");set(draft,q,n)}
+ else if(d.clr)set(draft,d.clr,"");
+ else return;adminUI(true)});
+$("#admin").addEventListener("change",async e=>{const t=e.target;if(!t.dataset.up||!t.files[0])return;
+ try{const r=await uploadImg(t.files[0]);set(draft,t.dataset.up,r.id);$$("#admin details[open]").forEach(x=>openK.add(x.dataset.key));adminUI(true)}catch(x){alert("Upload failed: "+(x.message||x.code||x))}});
+$("#edit").onclick=()=>{draft=structuredClone(D);adm="hero";pf="all";openK=new Set();adminUI(false);open_(true)};
+(async()=>{try{const r=await fetch("/api/me");if((await r.json()).admin)$("#edit").style.display="block"}catch(e){}if(location.hash==="#admin")loginUI()})();
+addEventListener("hashchange",()=>{if(location.hash==="#admin")loginUI()});
+</script>
+
+
+</body></html>
